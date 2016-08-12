@@ -124,11 +124,11 @@ We aim to provide a promise for all asynchronous operations in the Apple SDKs:
 * `MFMessageComposeViewController`<br>
   Present a message composer and `then` after user-action. No delegation required.
   * For Objective-C, use UIViewController’s `promiseViewController` method.
-  * [Swift](https://github.com/mxcl/PromiseKit/blob/master/Categories/MessagesUI/MFMessageComposeViewController+Promise.swift)
+  * [Swift](https://github.com/mxcl/PromiseKit/blob/master/Categories/MessageUI/MFMessageComposeViewController+Promise.swift)
 * `MFMailComposeViewController`<br>
   Present a mail composer and `then` after user-action. No delegation required.
   * For Objective-C, use UIViewController’s `promiseViewController` method.
-  * [Swift](https://github.com/mxcl/PromiseKit/blob/master/Categories/MessagesUI/MFMailComposeViewController+Promise.swift)
+  * [Swift](https://github.com/mxcl/PromiseKit/blob/master/Categories/MessageUI/MFMessageComposeViewController+Promise.swift)
 * `PHPhotoLibrary`
   * [Swift](https://github.com/mxcl/PromiseKit/blob/master/Categories/Photos/PHPhotoLibrary+Promise.swift)
 * `CoreAnimation`
