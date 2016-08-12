@@ -52,6 +52,8 @@ Obvious, but I had never tried setting more than one platform here. I quickly op
 Since you want these for all targets, *including test targets*, I suggest adding them to the Project’s settings and then pressing backspace on each target’s supported platforms so it
 inherits. Saves you effort.
 
+Now set deployment targets for all platforms (use the Build Settings screen).
+
 That’s it!
 
 ## That’s not it
