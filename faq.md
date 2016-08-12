@@ -352,12 +352,12 @@ We agree this is tedious, but other than specializing `when` for more parameter 
 
 ## What is the difference between PromiseKit and RxSwift?
 
-[](https://github.com/mxcl/PromiseKit/issues/484)
+[https://github.com/mxcl/PromiseKit/issues/484](https://github.com/mxcl/PromiseKit/issues/484)
 
 
 ## How can I wait on a promise?
 
-[](https://github.com/mxcl/PromiseKit/issues/484)
+[https://github.com/yannickl/AwaitKit](https://github.com/yannickl/AwaitKit)
 
 ## Why can’t I return from a `catch` like I can in Javascript?
 
