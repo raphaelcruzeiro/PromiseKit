@@ -103,6 +103,8 @@ script:
   - set -o pipefail && xcodebuild -scheme PromiseKit -destination "$DESTINATION" $ACTION | xcpretty
 ```
 
+> Note, the watchOS build will fail unless the build section of your scheme has the all but the build for testing action unchecked for your test targets.
+
 ## Do you have Carthage dependencies?
 
 In which case you have to do more. I suggest looking at the example `xcodeproj` files I provide.
