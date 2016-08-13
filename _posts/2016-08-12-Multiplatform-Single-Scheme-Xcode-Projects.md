@@ -91,12 +91,16 @@ language: objective-c
 osx_image: xcode8
 
 env:
-  - DESTINATION='platform=OS X'
-  - DESTINATION='platform=iOS Simulator,name=iPhone 6S'
-  - DESTINATION='platform=tvOS Simulator,name=Apple TV 1080p'
+  - ACTION=test  PLATFORM=Mac     DESTINATION='platform=OS X'
+  - ACTION=test  PLATFORM=iOS     DESTINATION='platform=iOS Simulator,name=iPhone 6S'
+  - ACTION=build PLATFORM=watchOS DESTINATION='platform=watchOS Simulator,name=Apple Watch - 38mm'
+  - ACTION=test  PLATFORM=tvOS    DESTINATION='platform=tvOS Simulator,name=Apple TV 1080p'
+
+install:
+  - test -f Cartfile* && carthage bootstrap --platform $PLATFORM
 
 script:
-  - set -o pipefail && xcodebuild -scheme PromiseKit -destination "$DESTINATION" test | xcpretty
+  - set -o pipefail && xcodebuild -scheme PromiseKit -destination "$DESTINATION" $ACTION | xcpretty
 ```
 
 ## Do you have Carthage dependencies?
