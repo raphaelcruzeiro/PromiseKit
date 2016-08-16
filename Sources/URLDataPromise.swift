@@ -50,8 +50,8 @@ public class URLDataPromise: Promise<Data> {
         }
     }
 
-    private var URLRequest: Foundation.URLRequest!
-    private var URLResponse: Foundation.URLResponse!
+    var URLRequest: Foundation.URLRequest!
+    var URLResponse: Foundation.URLResponse!
 
     /// Internal
     public class func go(_ request: URLRequest, body: ((Data?, URLResponse?, Error?) -> Void) -> Void) -> URLDataPromise {
