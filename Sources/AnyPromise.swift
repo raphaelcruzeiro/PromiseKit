@@ -302,7 +302,7 @@ extension AnyPromise {
 private func unwrapManifold(_ obj: AnyObject?) -> Any? {
     if let obj = obj, let kind = NSClassFromString("PMKArray"), obj.isKind(of: kind) {
         // - SeeAlso: PMKManifold
-        return obj[0]
+        return obj.objectAt(0)
     } else {
         return obj
     }
